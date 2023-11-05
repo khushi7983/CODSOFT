@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> Form </title>
+    <style>
+        * {
+            font-family: poppins;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ede6f6;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main {
+            height: 230px;
+            width: 50vw;
+            box-sizing: border-box;
+            background-color: white;
+            border-top: 20px solid #663ab5;
+            border-radius: 10px;
+            margin: 13px;
+            margin-bottom: 0;
+            padding: 10px;
+            padding-left: 30px;
+            font-size: 13px;
+        }
+
+        .main h1 {
+            font-size: 25px;
+        }
+
+        .name {
+            background-color: white;
+            box-sizing: border-box;
+            height: 150px;
+            width: 50vw;
+            margin: 13px;
+            padding: 10px;
+            padding-left: 30px;
+            margin-bottom: 0;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        [type="email"] {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 90%;
+            padding: 5px;
+        }
+
+        .dob {
+            background-color: white;
+            box-sizing: border-box;
+            height: 150px;
+            width: 50vw;
+            margin: 13px;
+            padding: 10px;
+            padding-left: 30px;
+            margin-bottom: 0;
+            border-radius: 10px;
+        }
+
+        input[type="date"] {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 90%;
+            padding: 5px;
+        }
+
+        .gender {
+            background-color: white;
+            box-sizing: border-box;
+            height: 150px;
+            width: 50vw;
+            margin: 13px;
+            padding: 10px;
+            padding-left: 30px;
+            margin-bottom: 0;
+            border-radius: 10px;
+        }
+
+        select {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 90%;
+            padding: 5px;
+        }
+
+
+        .College-name {
+            background-color: white;
+            box-sizing: border-box;
+            height: 150px;
+            width: 50vw;
+            margin: 13px;
+            padding: 10px;
+            padding-left: 30px;
+            margin-bottom: 0;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        [type="text"] {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 90%;
+            padding: 5px;
+        }
+
+        .Course {
+            background-color: white;
+            box-sizing: border-box;
+            height: 150px;
+            width: 50vw;
+            margin: 13px;
+            padding: 10px;
+            padding-left: 30px;
+            margin-bottom: 0;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        [type="text"] {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 90%;
+            padding: 5px;
+        }
+
+        .branch-name {
+            background-color: white;
+            box-sizing: border-box;
+            height: 150px;
+            width: 50vw;
+            margin: 13px;
+            padding: 10px;
+            padding-left: 30px;
+            margin-bottom: 0;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        [type="text"] {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 90%;
+            padding: 5px;
+        }
+
+        .phone-number {
+            background-color: white;
+            box-sizing: border-box;
+            height: 150px;
+            width: 50vw;
+            margin: 13px;
+            padding: 10px;
+            padding-left: 30px;
+            margin-bottom: 0;
+            border-radius: 10px;
+        }
+
+        input[type="number"],
+        [type="number"] {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 90%;
+            padding: 5px;
+        }
+
+        .email {
+            background-color: white;
+            box-sizing: border-box;
+            height: 150px;
+            width: 50vw;
+            margin: 13px;
+            margin-bottom: 0;
+            padding: 10px;
+            padding-left: 30px;
+            border-radius: 10px;
+        }
+        .submit {
+            width: 50vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        button {
+            margin: 13px;
+            margin-left: 0;
+            margin-bottom: 0;
+            padding: 8px 19px;
+            border-radius: 3px;
+            background-color: #663ab5;
+            border: none;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #452286;
+            transition: ease-in 200ms;
+        }
+
+        .rule {
+            width: 50vw;
+            margin-top: 15px;
+            font-size: 13px;
+            color: grey;
+        }
+
+        .policy {
+            font-size: 14px;
+            color: grey;
+        }
+
+        .policy a {
+            text-decoration: none;
+            color: grey;
+            text-decoration: underline;
+        }
+
+        img {
+            margin-top: 13px;
+            height: 200px;
+            width: 50vw;
+            object-fit: fill;
+            object-position: center;
+            border-radius: 10px;
+        }
+
+        .Google {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+
+        <div class="main">
+            <h1>Student Form</h1>
+            <hr />
+            <p>
+                All the Submissions to this form will be appended into a table as
+                signatures in the style of open letter.
+            </p>
+            <h4 style="color: red;">* Required</h4>
+        </div>
+        <div class="name">
+            <h3>Name <span style="color: red;">*</span></h3>
+            <input type="text" name="name" id="" required />
+        </div>
+        <div class="dob">
+            <h3>Date of Birth <span style="color: red;">*</span></h3>
+            <input type="date" name="dob" id="dob" required />
+        </div>
+        <div class="gender">
+            <h3>Gender <span style="color: red;">*</span></h3>
+            <select name="gender" id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="email">
+            <h3>Email <span style="color: red;">*</span></h3>
+            <input type="email" name="name" id="" required />
+        </div>
+        <div class="College-name">
+            <h3>College Name<span style="color: red;">*</span></h3>
+            <input type="text" name="name" id="" required />
+        </div>
+        <div class="Course">
+            <h3>Course<span style="color: red;">*</span></h3>
+            <input type="text" name="name" id="" required />
+        </div>
+        <div class="branch-name">
+            <h3>Branch<span style="color: red;">*</span></h3>
+            <input type="text" name="name" id="" required />
+        </div>
+        <div class="phone-number">
+            <h3>Phone Number<span style="color: red;">*</span></h3>
+            <input type="number" name="number" id="" required />
+        </div>
+        <div class="submit">
+            <button>Submit</button>
+        </div>
+        <p class="rule">Never submit passwords through Google Forms</p>
+        <p class="policy">
+            This content is neither created nor endrosed by Google.
+            <a href="#">Report Abuse.</a> <a href="#">Terms of condition.</a>
+            <a href="#">Privacy Policy.</a>
+        <h1 class="Google" style="color: grey; font-weight: 550; width: 50vw;">Google Forms</h1>
+        </p>
+    </form>
+</body>
+
+</html>
